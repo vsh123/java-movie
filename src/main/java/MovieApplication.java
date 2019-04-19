@@ -16,7 +16,7 @@ public class MovieApplication {
         do{
             OutputView.printMovies(movies);
             ReservationMain.reservationRun(reservations);
-        } while(InputView.InputContinueReservation());
+        } while(InputView.inputContinueReservation());
         reservations.printResult();
         PaymentMain.paymentrun(reservations);
     }

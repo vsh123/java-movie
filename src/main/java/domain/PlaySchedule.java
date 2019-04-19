@@ -32,7 +32,7 @@ public class PlaySchedule {
 
     boolean reduce(int peopleNum) {
         capacity -= peopleNum;
-        if (capacity == 0) {
+        if (capacity == MIN_RESERVATION_NUM) {
             return true;
         }
         return false;

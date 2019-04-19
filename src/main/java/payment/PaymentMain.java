@@ -7,9 +7,9 @@ import view.OutputView;
 
 public class PaymentMain {
     public static void paymentrun(MovieReservation reservations) {
-        OutputView.PaymentStart();
+        OutputView.paymentStart();
         ResultPay resultPay;
-        int point = InputView.InputPoint();
+        int point = InputView.inputPoint();
         int pay = reservations.getPay();
         int paymentMethod = InputView.selectPaymentMethod();
         resultPay = new ResultPay(pay, point, paymentMethod);

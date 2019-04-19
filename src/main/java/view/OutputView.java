@@ -20,7 +20,7 @@ public class OutputView {
         return selectedMovie;
     }
 
-    public static void PaymentStart(){
+    public static void paymentStart(){
         System.out.println("결제를 진행합니다.");
     }
 }

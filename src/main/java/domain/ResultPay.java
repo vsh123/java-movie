@@ -6,9 +6,9 @@ public class ResultPay {
     private static final double CARD_RATIO = 0.95;
     private static final double MONEY_RATIO = 0.98;
     private static final int MIN_POINT = 0;
-    int pay;
-    int point;
-    int paymentMethod;
+    private int pay;
+    private int point;
+    private int paymentMethod;
 
     public ResultPay(int pay, int point, int paymentMethod) {
         this.paymentMethod = paymentMethod;

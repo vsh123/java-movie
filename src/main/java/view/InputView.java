@@ -41,13 +41,13 @@ public class InputView {
         }
     }
 
-    public static boolean InputContinueReservation() {
+    public static boolean inputContinueReservation() {
         try {
             System.out.println("## 예약을 종료하고 결제를 진행하려면 1번, 추가 예약을 진행하려면 2번");
             return checkContinue(Integer.parseInt(scanner.nextLine().trim()));
         } catch (IllegalArgumentException e) {
             System.out.println("올바르지 않은 입력입니다.");
-            return InputContinueReservation();
+            return inputContinueReservation();
         }
     }
 
@@ -61,13 +61,13 @@ public class InputView {
         throw new IllegalArgumentException();
     }
 
-    public static int InputPoint() {
+    public static int inputPoint() {
         try {
             System.out.println("## 포인트 사용 금액을 입력하세요, 포인트가 없으면 0 입력");
             return ResultPay.checkPoint(Integer.parseInt(scanner.nextLine().trim()));
         } catch (IllegalArgumentException e) {
             System.out.println("올바르지 않은 입력입니다.");
-            return InputPoint();
+            return inputPoint();
         }
     }
 
@@ -77,7 +77,7 @@ public class InputView {
             return ResultPay.checkPaymentMethod(Integer.parseInt(scanner.nextLine().trim()));
         } catch (IllegalArgumentException e) {
             System.out.println("올바르지 않은 입력입니다.");
-            return InputPoint();
+            return inputPoint();
         }
     }
 }
